@@ -40,11 +40,11 @@ Access the FastAPI Swagger documentation at http://localhost:8000/docs to intera
 
 ### API Endpoints
 
-    POST /consents/: Create a new consent.
-    POST /users/{username}/consents/: Add a consent to a user.
-    DELETE /users/{username}/consents/: Revoke a consent from a user.
+    POST /consents/?consent_name={consent_name}&seconds={number of seconds consent is valid}&days={number of days consent is valid}: Create a new consent.
+    POST /users/{username}/consents/{consent_name}: Add a consent to a user.
+    DELETE /users/{username}/consents/{consent_name}: Revoke a consent from a user.
     GET /users/{username}/consents/: Get a user's consents.
-    GET /users/{username}/consents/{consent}: Check if user has given specific consent.
+    GET /users/{username}/consents/{consent_name}: Check if user has given specific consent.
 
 #### Manual usage of endpoints
 You can use all of the GET endpoints from your browser.
