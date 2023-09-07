@@ -27,8 +27,8 @@ Follow these instructions to set up and run the FastAPI consent management servi
 1. Clone this repository to your local machine:
 
    ```bash
-    git clone https://github.com/TODO
-    cd TODO
+    git clone https://github.com/kodmarcel/consent_api
+    cd consent_api
     python -m venv venv
     source venv/bin/activate  # On Windows, use venv\Scripts\activate
     pip install -r requirements.txt
